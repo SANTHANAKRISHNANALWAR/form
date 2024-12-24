@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="formContainer align">
+        <div class="formComponent cspacing">
+            <div class="formBody grid-1">
+                <div class="formBlock d-flex alicen juscen">
+                    <div class="form d-flex-col alicen juscen">
+                        <div class="formHead d-flex-col alicen juscen mb-3">
+                            <h3>Contact Us</h3>
+                            <p>Please take a moment to get in touch, we will get back to you shortly.</p>
+                        </div>
+                        <form action="#" method="post" class="grid-2">
+
+                            <div class="form1 d-flex-col">
+                                <div class="formGroup d-flex-col">
+                                    <label for="userName">Your Name</label>
+                                    <input type="text" placeholder="Enter Your Name" class="userName" id="userName">
+                                </div>
+    
+                                <div class="formGroup d-flex-col">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" placeholder="Enter Email id" class="email" id="email">
+                                </div>
+    
+                                <div class="formGroup d-flex-col">
+                                    <label for="phoneNo">Phone Number</label>
+                                    <input type="number" name="phoneNumber" id="phoneNo" placeholder="Enter Number">
+                                </div>
+    
+                                <div class="formGroup d-flex-col">
+                                    <label for="help">How can we help you?</label>
+                                    <select type="number" name="phoneNumber" id="help" placeholder="Choose one">
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form2 d-flex-col">
+                                <div class="formGroup d-flex-col">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" placeholder="Enter your feeback here!" rows="12"></textarea>
+                                </div>
+
+                                <div class="formGroup d-flex">
+                                    <input type="checkbox" name="chkbox" id="chkbox">
+                                    <label for="chkbox">Join our mailing list?</label>
+                                </div>
+    
+                                <div class="formGroup d-flex-col">
+                                    <button type="submit" id="sendbtn" class="sendbtn">Send Message</button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
