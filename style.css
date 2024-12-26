@@ -52,7 +52,7 @@ svg {
 }
 
 :root {
-    --primaryColor: #be9c79;
+    --primaryColor: #6047f0;
     --secondaryColor: #660600;
     --darkColor: #330300;
     --lightColor: #ff0f00;
@@ -122,7 +122,7 @@ svg {
 /* project code Starts here */
 
 .formContainer {
-    background-color: #6047f0;
+    background-color: var(--primaryColor);
     padding: 3rem;
 }
 
@@ -138,17 +138,18 @@ svg {
     background-color: #7fff00;
 } */
 
-.form {
+.formSect {
     background-color: #fcf9f9;
     padding: 1.5rem;
-    text-align: center;
+    /* text-align: center; */
+    width: 50%;
 }
 
-.form h3 {
+.formSect h3 {
     font-size: 3rem;
 }
 
-.form p {
+.formSect p {
     font-size: 1.2rem;
 }
 
@@ -156,17 +157,60 @@ svg {
     background-color: #d2691e;
 } */
 
-.form1,
-.form2 {
+form {
+    width: 100%;
+}
+
+.formSect1,
+.formSect2 {
     font-size: 1.5rem;
 }
 
 .formGroup input,
-.formGroup select,
-.formGroup textarea {
-    padding: 1rem 8rem;
-    /* outline:tan; */
-    /* outline-color: #ffffffe8; */
+.formGroup textarea, .formGroup select {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.1rem;
+    text-align: center;
+    /* border: none; */
+    border: 0.1rem solid #0505051c;
+    /* outline: transparent; */
+    /* outline-style: solid;
+    outline-color: #ec0909e0;
+    outline-width:thin; */
+    outline: 0.1rem solid #07f12771;
+
+}
+option{
+    font-family: "Asap", serif;
+    font-style: italic;
+    /* border: 2px solid #07e007; */
+    text-align: center;
+    color: #f5e505;
+    background-color: #47d7f0;
+    font-size: 2rem;
+}
+
+/* option:focus{
+    background-color: #ffffff !important;
+} */
+
+
+
+.formGroup input:focus, .formGroup select:focus, .formGroup textarea:focus{
+    outline-color: #edfd09;
+    outline-width:thin;
+}
+
+.formGroup input[type='checkbox'] {
+    background-color: #07e007;
+    width: auto;
+    outline: none;
+    /* border-radius: 2rem; */
+}
+
+.formGroup input::placeholder, .formGroup textarea::placeholder, .formGroup select::placeholder{
+    text-align: start;
 }
 
 .sendbtn {
@@ -193,6 +237,10 @@ svg {
 
     .align {
         padding: 0 1rem;
+    }
+
+    .formSect {
+        width: 100%;
     }
 }
 
